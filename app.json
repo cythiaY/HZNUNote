@@ -1,0 +1,23 @@
+{
+  "pages": ["pages/index/index", "pages/logs/logs", "pages/addNote/addNote"],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#FFFFFF",
+    "selectedColor": "#2c3e50",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "麻吉"
+      },
+      {
+        "pagePath": "pages/addNote/addNote",
+        "text": "和我"
+      }
+    ]
+  }
+}

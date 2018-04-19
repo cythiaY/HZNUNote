@@ -1,0 +1,31 @@
+/**index.wxss**/
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.note {
+  width: 500rpx;
+  box-shadow: 4rpx 4rpx 4rpx #ddd;
+  padding: 20rpx 20rpx;
+  position: relative;
+  border-top: 1rpx solid #ddd;
+  border-left: 1rpx solid #ddd;
+}
+
+.note image {
+  width: 106rpx;
+  height: 100rpx;
+  position: absolute;
+  top: -40rpx;
+  left: -40rpx;
+}
+
+.note .text {
+  font-size: 28rpx;
+  line-height: 40rpx;
+  color: #646c72;
+  text-indent: 40rpx;
+}

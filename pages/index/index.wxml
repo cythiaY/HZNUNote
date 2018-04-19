@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <view class="note">
+      <image src="../../images/tape.png"></image>
+      <view class="text">{{str}}</view>
+    </view>
+  </view>
+</view>

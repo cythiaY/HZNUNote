@@ -1,0 +1,38 @@
+.inputText {
+  border: 2rpx #646c72 solid;
+  border-radius: 20rpx;
+  padding: 20rpx 20rpx;
+  margin-top: 100rpx;
+  font-size: 28rpx;
+  line-height: 38rpx;
+}
+.inputText .textarea-placeholder {
+  font-size: 28rpx;
+  line-height: 38rpx;
+  color: #eee;
+}
+.aonymousRadio {
+  text-align: right;
+  margin: 50rpx 130rpx;
+}
+.aonymousRadio text {
+  margin-left: 20rpx;
+}
+.btns {
+  width: 500rpx;
+  margin: auto;
+}
+.btns button {
+  width: 220rpx;
+  float: left;
+  border-radius: 20rpx;
+  border: 2rpx #646c72 solid;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.btns .resetBtn {
+  float: left;
+}
+.btns .submitBtn {
+  float: right;
+}
