@@ -13,6 +13,7 @@
   position: relative;
   border-top: 1rpx solid #ddd;
   border-left: 1rpx solid #ddd;
+  margin: 30rpx 0;
 }
 
 .note image {
@@ -23,7 +24,22 @@
   left: -40rpx;
 }
 
+.note .name {
+  font-size: 26rpx;
+  line-height: 40rpx;
+  color: #333333;
+  float: left;
+}
+
+.note .time {
+  font-size: 26rpx;
+  line-height: 40rpx;
+  color: #666666;
+  float: right;
+}
+
 .note .text {
+  clear: both;
   font-size: 28rpx;
   line-height: 40rpx;
   color: #646c72;

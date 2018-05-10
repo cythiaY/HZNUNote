@@ -1,9 +1,13 @@
-<!--index.wxml-->
+<!-- index.wxml -->
 <view class="container">
   <view class="userinfo">
-    <view class="note">
+    <view class="note" wx:key="{{index}}" wx:for="{{noteList}}">
       <image src="../../images/tape.png"></image>
-      <view class="text">{{str}}</view>
+      <view>
+        <text class="name">{{item.name}}</text>
+        <text class="time">{{item.time}}</text>
+      </view>
+      <view class="text">{{item.content}}</view>
     </view>
   </view>
 </view>
