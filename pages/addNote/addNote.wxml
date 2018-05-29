@@ -1,13 +1,19 @@
 <view>
-<textarea class="inputText" placeholder="你想留下什么故事？"></textarea>
-<view class="aonymousRadio">
-  <label data-tag="0" bindtap="toggleAonymous">
-    <icon wx:if="{{!anonymous}}" class="icon" type="circle" size="16"/> 
-    <icon wx:else type="success" class="icon" size="16" color="#646c72"/>
-    <text>匿名</text>
-  </label>
-</view>
-<!-- <view class="colorsModel">
+  <view wx:if="{{authVisible}}">
+    <view>
+      <button open-type="getUserInfo" bindgetuserinfo="getUserInfo">请先授权哦</button>
+    </view>
+  </view>
+  <view wx:else>
+    <textarea class="inputText" placeholder="你想留下什么故事？"></textarea>
+    <view class="aonymousRadio">
+      <label data-tag="0" bindtap="toggleAonymous">
+        <icon wx:if="{{!anonymous}}" class="icon" type="circle" size="16" />
+        <icon wx:else type="success" class="icon" size="16" color="#646c72" />
+        <text>匿名</text>
+      </label>
+    </view>
+    <!-- <view class="colorsModel">
   <label data-color="pink" bindtap="changeColor">
     <icon wx:if="{{colorStyle === 'pink'}}" type="success" color="pink" size="18"/> 
     <icon wx:else type="circle" size="18" color="pink"/>
@@ -17,8 +23,9 @@
     <icon wx:else type="circle" size="18" color="blue"/>
   </label>
 </view> -->
-<view class="btns">
-<button class="resetBtn" plain>重新写</button>
-<button class="submitBtn" plain>写好啦</button>
-</view>
+    <view class="btns">
+      <button class="resetBtn" plain>重新写</button>
+      <button class="submitBtn" plain>写好啦</button>
+    </view>
+  </view>
 </view>
