@@ -1,4 +1,5 @@
 //app.js
+let baseUrl = 'http://localhost:1234'
 App({
   onLaunch: function () {
     // 展示本地存储能力
@@ -32,6 +33,30 @@ App({
         }
       }
     })
+  },
+  ajax: function (url, requestData, method) {
+    return new Promise((resolve, reject) => {
+      wx.request({
+        url: baseUrl + url,
+        data: requestData,
+        header: {
+          'content-type': 'application/json' // 默认值
+        },
+        method: method || 'POST',
+        success: function (res) {
+          console.log(res.data)
+          resolve(res)
+        },
+        fail(err) {
+          // fail && fail.apply(this, arguments)
+          reject(err)
+        },
+        // complete() {
+        //   complete && complete.apply(this, arguments)
+        // }
+      })
+    })
+
   },
   globalData: {
     userInfo: null

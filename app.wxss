@@ -10,7 +10,7 @@
 }
 
 textarea {
-  width: 460rpx;
+  width: 560rpx;
   height: 300rpx;
   display: block;
   position: relative;

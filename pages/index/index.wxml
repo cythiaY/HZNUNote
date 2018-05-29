@@ -4,8 +4,8 @@
     <view class="note" wx:key="{{index}}" wx:for="{{noteList}}">
       <image src="../../images/tape.png"></image>
       <view>
-        <text class="name">{{item.name}}</text>
-        <text class="time">{{item.time}}</text>
+        <text class="name">{{item.announcerId}}</text>
+        <text class="time">{{item.createTime}}</text>
       </view>
       <view class="text">{{item.content}}</view>
     </view>

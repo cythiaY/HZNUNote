@@ -8,11 +8,9 @@
 
 .note {
   width: 500rpx;
-  box-shadow: 4rpx 4rpx 4rpx #ddd;
+  box-shadow: 0 0 10rpx #ddd;
   padding: 20rpx 20rpx;
   position: relative;
-  border-top: 1rpx solid #ddd;
-  border-left: 1rpx solid #ddd;
   margin: 30rpx 0;
 }
 

@@ -1,38 +1,57 @@
 .inputText {
-  border: 2rpx #646c72 solid;
+  /* border: 2rpx #646c72 solid; */
+  box-shadow: 0 0 10rpx #ddd;
   border-radius: 20rpx;
   padding: 20rpx 20rpx;
   margin-top: 100rpx;
   font-size: 28rpx;
   line-height: 38rpx;
 }
+
 .inputText .textarea-placeholder {
   font-size: 28rpx;
   line-height: 38rpx;
   color: #eee;
 }
+
 .aonymousRadio {
   text-align: right;
-  margin: 50rpx 130rpx;
+  margin: 50rpx 80rpx;
 }
+.aonymousRadio .icon{
+  vertical-align: middle;
+}
+
 .aonymousRadio text {
   margin-left: 20rpx;
+  color: #666666;
+  font-size: 30rpx;
 }
+
 .btns {
-  width: 500rpx;
+  width: 600rpx;
   margin: auto;
 }
+
 .btns button {
-  width: 220rpx;
+  width: 200rpx;
   float: left;
   border-radius: 20rpx;
-  border: 2rpx #646c72 solid;
-  height: 80rpx;
-  line-height: 80rpx;
+  border: none;
+  /* box-shadow: 0 0 10rpx #eee; */
+  height: 70rpx;
+  font-size: 26rpx;
+  line-height: 70rpx;
 }
+
 .btns .resetBtn {
   float: left;
+  border: 2rpx solid #eee;
+  color: pink;
 }
+
 .btns .submitBtn {
   float: right;
+  background: pink;
+  color: #FFFFFF;
 }
